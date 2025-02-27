@@ -1,0 +1,50 @@
+# Fichiers de l'environnement Visual Studio
+.vs/
+.vs2019/
+.vs2017/
+.idea/
+.vscode/
+# Les fichiers binaires compilés
+bin/
+obj/
+
+# Fichiers spécifiques à Windows (par exemple, les fichiers de l'index de recherche)
+Thumbs.db
+Desktop.ini
+
+# Fichiers générés par les dépendances
+packages/
+
+# Fichiers de configuration de l'utilisateur
+*.user
+*.userosscache
+*.suo
+*.userprefs
+
+# Répertoire de publication
+publish/
+
+# Fichiers générés par la plateforme de compilation
+*.dll
+*.exe
+*.pdb
+*.cache
+*.log
+*.vshost.*
+
+# Pour les applications UWP (Universal Windows Platform)
+# Si vous avez des projets UWP dans votre solution, ignorez ceux-ci :
+# .nuget/
+
+# Fichiers d'analyse statique ou autres outils de build
+*.coverage
+*.report
+*.gutter/
+
+# Fichiers de cache de l'éditeur de code
+# Visual Studio Code
+.vscode/
+
+# Fichiers temporaires de compilateurs
+# Ces répertoires et fichiers sont utilisés pour la gestion du projet .NET
+# et ne doivent pas être suivis par Git.
