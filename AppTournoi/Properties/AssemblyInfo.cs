@@ -10,13 +10,9 @@ using System.Windows;
 [assembly: AssemblyTitle("AppTournoi")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("
-
-            ")]
+[assembly: AssemblyCompany(" ")]
 [assembly: AssemblyProduct("AppTournoi")]
-[assembly: AssemblyCopyright("Copyright © 
-
-             2025")]
+[assembly: AssemblyCopyright("Copyright © 2025")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 

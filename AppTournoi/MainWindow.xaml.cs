@@ -23,6 +23,21 @@ namespace AppTournoi
         public MainWindow()
         {
             InitializeComponent();
+            //On ajoute les handlers pour les boutons du menu principal
+            MenuHandlers();
+        }
+
+        private void MenuHandlers()
+        {
+            this.MenuItemConBdd.Click += ConBddOnClick; //MenuItem Connexion BDD
+        }
+
+        /// <summary>
+        /// handler pour le MenuItem "Connexion BDD"
+        /// </summary>
+        private void ConBddOnClick(Object sender, RoutedEventArgs e)
+        {
+            new DBWindow().Show();
         }
     }
 }

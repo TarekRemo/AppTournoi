@@ -1,7 +1,21 @@
 ﻿<?xml version='1.0' encoding='utf-8'?>
-<SettingsFile xmlns="uri:settings" CurrentProfile="(Default)">
-  <Profiles>
-    <Profile Name="(Default)" />
-  </Profiles>
-  <Settings />
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="AppTournoi.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="DB_user" Type="System.String" Scope="User">
+      <Value Profile="(Default)">adminTournois</Value>
+    </Setting>
+    <Setting Name="DB_password" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Password1234@c</Value>
+    </Setting>
+    <Setting Name="DB_dataBase" Type="System.String" Scope="User">
+      <Value Profile="(Default)">bddtournois</Value>
+    </Setting>
+    <Setting Name="DB_host" Type="System.String" Scope="User">
+      <Value Profile="(Default)">localhost</Value>
+    </Setting>
+    <Setting Name="DB_port" Type="System.String" Scope="User">
+      <Value Profile="(Default)">3306</Value>
+    </Setting>
+  </Settings>
 </SettingsFile>

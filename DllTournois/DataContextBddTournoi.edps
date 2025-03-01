@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <EntityDeveloper Version="7.3.191.0">
-  <ModelSettings xmlns:ed="http://devart.com/schemas/EntityDeveloper/1.0" AppConnectionStringName="BddtournoiDataContextConnectionString" ConnectionStringInAppConfig="True" RegenareteConnectionStringInAppConfig="True" TargetFramework="Net80" DetectTPTInheritance="False">
+  <ModelSettings xmlns:ed="http://devart.com/schemas/EntityDeveloper/1.0" AppConnectionStringName="BddtournoiDataContextConnectionString" ConnectionStringInAppConfig="True" RegenareteConnectionStringInAppConfig="True" TargetFramework="Net45" DetectTPTInheritance="False">
     <Generation />
     <DatabaseFirstNamingRules>
       <EntitySet PluralizationName="Pluralize" />
