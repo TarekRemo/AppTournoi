@@ -55,8 +55,30 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="AllParticipantsWindow.xaml.cs">
+      <DependentUpon>AllParticipantsWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="GestionParticipantsWindow.xaml.cs">
+      <DependentUpon>GestionParticipantsWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="GestionSportsWindow.xaml.cs">
+      <DependentUpon>GestionSportsWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="GestionTournoiWindow.xaml.cs">
+      <DependentUpon>GestionTournoiWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ModifierSportWindow.xaml.cs">
+      <DependentUpon>ModifierSportWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ModifierTournoiWindow.xaml.cs">
+      <DependentUpon>ModifierTournoiWindow.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Settings.cs" />
     <Page Include="AddParticipantWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="AllParticipantsWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -65,6 +87,18 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="DBWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="GestionParticipantsWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="GestionSportsWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="GestionTournoiWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -89,6 +123,14 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="ModifierSportWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ModifierTournoiWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs">
@@ -126,6 +168,9 @@
       <Project>{e6daa37f-f590-4a43-9fe6-8a81dc74165c}</Project>
       <Name>DllTournois</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\IconeUtilisateurs.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -32,10 +32,6 @@ namespace AppTournoi
             this.TextBoxPort.Text = Properties.Settings.Default.DB_port;
             this.TextBoxNomUtilisateur.Text = Properties.Settings.Default.DB_user;
             this.PasswordBoxMDP.Password = Properties.Settings.Default.DB_password;
-
-            //handler des bouttons "enregistrer et "annuler"
-            this.ButtonEnregistrer.Click += ButtonEnregistrerOnClick;
-            this.ButtonAnnuler.Click += ButtonAnnulerOnClick;
         }
 
         /// <summary>
@@ -46,21 +42,10 @@ namespace AppTournoi
         /// </summary>
         private void ButtonEnregistrerOnClick(Object sender, RoutedEventArgs e)
         {
-            //On essyae de se connecter
-            try
-            {
-                Bddtournoi.Connect(TextBoxAdresseIP.Text, TextBoxNomUtilisateur.Text, PasswordBoxMDP.Password, 
-                                    Properties.Settings.Default.DB_dataBase, TextBoxPort.Text);
-                //Si la connexion réussie, on enregistre les valeurs et on ouvre la fenêtre principale
-                SaveDBSettings();
-                new MainWindow();
-                this.Close();
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Erreur de connexion à la BDD : " + ex.Message);
-                return;
-            }
+            //Si la connexion réussie, on enregistre les valeurs et on ouvre la fenêtre principale
+            SaveDBSettings();
+            new MainWindow();
+            this.Close();
         }
 
         private void ButtonAnnulerOnClick(Object sender, RoutedEventArgs e)

@@ -1,0 +1,38 @@
+﻿<Window x:Class="AppTournoi.ModifierTournoiWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AppTournoi"
+        mc:Ignorable="d"
+        Title="ModifierTournoiWindow" Height="450" Width="800" Background="LightBlue">
+    <Grid>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"/>
+            <!-- Colonne pour les labels -->
+            <ColumnDefinition Width="*"/>
+            <!-- Colonne pour les inputs -->
+        </Grid.ColumnDefinitions>
+
+        <!-- Formulaire de gestion des tournois -->
+        <StackPanel Grid.Column="1" Margin="10">
+            <TextBlock Text="Modifier un tournoi" FontWeight="Bold" FontSize="14" Margin="0,0,0,10"/>
+
+            <TextBlock Text="Intitulé du tournoi" FontWeight="Bold"/>
+            <TextBox x:Name="TextBoxIntitule" Width="200" Margin="0,5,0,10"/>
+
+            <TextBlock Text="Date du tournoi" FontWeight="Bold"/>
+            <DatePicker x:Name="DatePickerTournoi" Width="200" Margin="0,5,0,10"/>
+
+            <TextBlock Text="Sport associé" FontWeight="Bold"/>
+            <ComboBox x:Name="ComboBoxSports" Width="200" Margin="0,5,0,10"/>
+
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="10">
+                <Button Content="Enregistrer" Width="100" Click="Button_Enregistrer_Click" />
+                <Button Content="Annuler" Width="100" Margin="10,0,0,0" Click="Button_Annuler_Click" />
+            </StackPanel>
+        </StackPanel>
+
+    </Grid>
+</Window>

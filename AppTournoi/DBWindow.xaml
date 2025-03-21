@@ -30,8 +30,8 @@
 
         <!-- Boutons -->
         <StackPanel Grid.Row="5" Grid.ColumnSpan="2" Orientation="Horizontal" HorizontalAlignment="Center" Margin="20">
-            <Button x:Name="ButtonEnregistrer" Content="Enregistrer" Width="100" Height="30" Margin="10"/>
-            <Button x:Name="ButtonAnnuler" Content="Annuler" Width="100" Height="30" Margin="10"/>
+            <Button x:Name="ButtonEnregistrer" Content="Enregistrer" Width="100" Height="30" Margin="10" Click="ButtonEnregistrerOnClick"/>
+            <Button x:Name="ButtonAnnuler" Content="Annuler" Width="100" Height="30" Margin="10" Click="ButtonAnnulerOnClick"/>
         </StackPanel>
     </Grid>
 </Window>

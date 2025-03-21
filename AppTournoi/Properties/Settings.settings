@@ -6,7 +6,7 @@
       <Value Profile="(Default)">adminTournois</Value>
     </Setting>
     <Setting Name="DB_password" Type="System.String" Scope="User">
-      <Value Profile="(Default)">Password1234@c</Value>
+      <Value Profile="(Default)">Password1234@</Value>
     </Setting>
     <Setting Name="DB_dataBase" Type="System.String" Scope="User">
       <Value Profile="(Default)">bddtournois</Value>
@@ -16,6 +16,9 @@
     </Setting>
     <Setting Name="DB_port" Type="System.String" Scope="User">
       <Value Profile="(Default)">3306</Value>
+    </Setting>
+    <Setting Name="Login" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
     </Setting>
   </Settings>
 </SettingsFile>

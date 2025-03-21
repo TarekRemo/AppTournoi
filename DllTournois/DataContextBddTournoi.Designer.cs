@@ -17,6 +17,7 @@ using System.Collections.Generic;
 using System.Reflection;
 using System.Linq;
 using System.Linq.Expressions;
+using System.Security.Cryptography;
 
 namespace BddtournoiContext
 {
@@ -549,6 +550,24 @@ namespace BddtournoiContext
             if (handler != null)
                 handler(this, new PropertyChangedEventArgs(propertyName));
         }
+
+        //------------------------------------------------------------------------//
+
+        public override string ToString()
+        {
+            return this.Prenom + " " + this.Nom; 
+        }
+
+        public Participant(string nom, string prenom, System.DateTime dateN, string sex, byte[] photo, Tournoi tournoi)
+        {
+            this.Nom = nom;
+            this.Prenom = prenom;
+            this.DateNaissance = dateN;
+            this.Sexe = sex;
+            this.Photo = photo;
+            this.Tournoi = tournoi.IdTournoi;
+            this.Tournoi1 = tournoi; 
+        }
     }
 
     /// <summary>
@@ -685,6 +704,17 @@ namespace BddtournoiContext
         {
             this.SendPropertyChanging("Tournois");
             entity.Sport1 = null;
+        }
+
+        //-----------------------------------------------------------------------------//
+        override public string ToString()
+        {
+            return this.Intitule; 
+        }
+        
+        public Sport(string intitule)
+        {
+            this.Intitule = intitule; 
         }
     }
 
@@ -923,6 +953,21 @@ namespace BddtournoiContext
         {
             this.SendPropertyChanging("Participants");
             entity.Tournoi1 = null;
+        }
+
+        //----------------------------------------------------------------------------------//
+
+        public override string ToString()
+        {
+            return this.Intitule;
+        }
+
+        public Tournoi(string intitule, System.DateTime date, Sport sport)
+        {
+            this.Intitule = intitule;
+            this.DateTournoi = date;
+            this.Sport1 = sport;
+            this.Sport = sport.IdSport; 
         }
     }
 
